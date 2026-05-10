@@ -1,0 +1,156 @@
+{
+  "project_name": "Pulsay",
+  "domain": "Creator Perception Intelligence",
+  "theme_and_archetype": {
+    "theme": "dark",
+    "archetype": "5 (Jewel & Luxury) with Neon/Data-viz accents",
+    "vibe": "Premium creator-tool, emotional intelligence, dark mode glassmorphism, cinematic, moody"
+  },
+  "colors": {
+    "background": {
+      "default": "#05050A",
+      "surface": "rgba(255, 255, 255, 0.03)",
+      "surface_hover": "rgba(255, 255, 255, 0.06)",
+      "glass": "rgba(255, 255, 255, 0.02)"
+    },
+    "border": {
+      "subtle": "rgba(255, 255, 255, 0.08)",
+      "strong": "rgba(255, 255, 255, 0.15)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A"
+    },
+    "accent": {
+      "primary": "#00E5FF",
+      "primary_hover": "#00C4DD",
+      "positive": "#00E5FF",
+      "negative": "#FF2A5F",
+      "neutral": "#8B5CF6",
+      "warning": "#F59E0B"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at 50% 50%, rgba(0, 229, 255, 0.15), transparent 60%)",
+      "positive_trend": "linear-gradient(180deg, rgba(0, 229, 255, 0.3) 0%, rgba(0, 229, 255, 0) 100%)",
+      "negative_trend": "linear-gradient(180deg, rgba(255, 42, 95, 0.3) 0%, rgba(255, 42, 95, 0) 100%)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Outfit', sans-serif",
+      "body": "'Manrope', sans-serif",
+      "data": "'JetBrains Mono', monospace"
+    },
+    "scales": {
+      "h1": "text-5xl sm:text-6xl tracking-tighter font-light",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-medium",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg font-semibold",
+      "body": "text-base leading-relaxed text-zinc-400",
+      "label": "text-xs tracking-[0.2em] uppercase font-bold text-zinc-500",
+      "metric_large": "text-4xl sm:text-5xl font-mono tracking-tight text-white",
+      "metric_small": "text-2xl font-mono tracking-tight text-white"
+    }
+  },
+  "surfaces_and_micro_themes": {
+    "glassmorphism_card": "bg-white/[0.02] backdrop-blur-2xl border border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.2)] rounded-2xl",
+    "glassmorphism_header": "bg-[#05050A]/60 backdrop-blur-xl border-b border-white/[0.08]",
+    "interactive_widget": "bg-white/[0.02] border border-white/[0.08] hover:bg-white/[0.04] hover:-translate-y-1 transition-all duration-300 rounded-2xl",
+    "floating_panel": "bg-[#0A0A0F] border border-white/[0.1] shadow-[0_24px_48px_rgba(0,0,0,0.5)] rounded-2xl"
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_gap": "py-24 sm:py-32",
+    "card_padding": "p-6 sm:p-8",
+    "grid_dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8"
+  },
+  "components_strategy": {
+    "charts": {
+      "library": "recharts",
+      "style": "Remove default cartesian grids, use ultra-thin lines. Axes should be muted text-zinc-600. Add glowing drop-shadows to line strokes using SVG filters.",
+      "reputation_meter": "RadialBarChart (0-100) with gradient stroke (Red -> Yellow -> Cyan) representing sentiment health."
+    },
+    "forms": {
+      "input": "bg-white/[0.02] border border-white/[0.08] text-white focus:ring-1 focus:ring-[#00E5FF] focus:border-[#00E5FF] rounded-lg h-12 px-4 transition-all",
+      "button_primary": "bg-[#00E5FF] text-black font-medium hover:bg-[#00C4DD] hover:shadow-[0_0_20px_rgba(0,229,255,0.4)] rounded-lg px-6 h-12 transition-all",
+      "button_glass": "bg-white/[0.05] text-white hover:bg-white/[0.1] border border-white/[0.1] rounded-lg px-6 h-12 transition-all"
+    },
+    "scanning_animation": {
+      "wrapper": "Relative container with pulsating rings.",
+      "rings": "Absolute elements with framer-motion scaling up and fading out (scale: [1, 1.5, 2], opacity: [0.5, 0])."
+    }
+  },
+  "pages_and_features": {
+    "marketing_landing": {
+      "hero": "Massive H1 ('Most creator tools track numbers. We track perception.'). Abstract glowing orb image in background. Glass CTA.",
+      "features": "Bento grid layout showcasing dashboard modules (blurred/mocked UI snippets).",
+      "testimonials": "Avatars of creators with quote cards."
+    },
+    "onboarding": {
+      "layout": "Minimalist centered card. Step 1: Input IG Username. Step 2: Scanning state.",
+      "scanning_state": "Simulate data fetching ('Analyzing latest 100 comments...', 'Detecting sentiment spikes...'). Use skeleton loaders and pulse animations."
+    },
+    "dashboard": {
+      "header": "Creator name/handle, quick summary, re-scan button.",
+      "reputation_score": "Hero widget (col-span-1). Large radial dial.",
+      "sentiment_split": "Donut chart (Positive/Neutral/Negative) with custom legend.",
+      "sentiment_trend": "Area chart (col-span-2 or 3) spanning time, showing spikes with annotation dots.",
+      "top_narratives": "Tags/chips inside a card: 'Authentic', 'Funny', 'Money-minded'. Each colored by sentiment.",
+      "ai_recommendations": "Text-heavy card with glowing border highlight, generating actionable advice."
+    }
+  },
+  "animations": {
+    "library": "framer-motion",
+    "page_transition": "opacity: 0 -> 1, y: 10 -> 0",
+    "list_stagger": "staggerChildren: 0.1",
+    "hover_lift": "y: -4px, shadow increases"
+  },
+  "media_and_assets": {
+    "hero_orb_abstract": {
+      "url": "https://images.unsplash.com/photo-1763596396590-81193928cdeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG5lb24lMjBnbG93aW5nJTIwc3BoZXJlJTIwZGFya3xlbnwwfHx8fDE3Nzg0NDEyNjV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Dark abstract orb with glowing rings",
+      "usage": "Background or hero visual for the marketing landing page"
+    },
+    "ambient_background": {
+      "url": "https://images.unsplash.com/photo-1714548213575-82971e3d24e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHxkYXJrJTIwZ3JhZGllbnQlMjBhdXJhJTIwYmx1cnxlbnwwfHx8fDE3Nzg0NDEyNjV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "blurry dark and blue background",
+      "usage": "Use as a full-page background texture behind the glassmorphism elements to give depth"
+    },
+    "creator_avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1611702817774-8ac0f2d3f13e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxpbnN0YWdyYW0lMjBwb3J0cmFpdHxlbnwwfHx8fDE3Nzg0NDEyNDh8MA&ixlib=rb-4.1.0&q=85",
+        "description": "woman creator"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1764698192249-641a17d7a4fe?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHw0fHxpbmZsdWVuY2VyJTIwY3JlYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc3ODQ0MTI0OHww&ixlib=rb-4.1.0&q=85",
+        "description": "stylish creator"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1758598305805-4b9d79ae89bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwzfHxpbmZsdWVuY2VyJTIwY3JlYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc3ODQ0MTI0OHww&ixlib=rb-4.1.0&q=85",
+        "description": "creator taking selfie"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react"
+    }
+  },
+  "testing_attributes": {
+    "convention": "data-testid=\"[element-role]\"",
+    "examples": [
+      "data-testid=\"connect-ig-input\"",
+      "data-testid=\"connect-ig-submit\"",
+      "data-testid=\"reputation-score-widget\"",
+      "data-testid=\"ai-recommendations-card\""
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette provided. DO NOT use generic Tailwind gray or slate for backgrounds; stick to the custom Midnight Blue (#05050A) hex.",
+    "Ensure all dashboard cards implement the 'glassmorphism_card' classes exactly. DO NOT use Shadcn's default white/solid cards.",
+    "The Hero heading must NOT be centered if the orb image is on the right. Favor asymmetrical bento grids.",
+    "For Recharts, always set the container wrapper to background transparent. Use `stroke=\"#00E5FF\"` and apply an SVG drop-shadow filter for the 'glow' effect.",
+    "Use framer-motion for the 'Scanning' state in onboarding, mimicking a radar or pulse ring effect over the user's avatar.",
+    "Remember to include data-testid on all interactive elements as requested."
+  ]
+}
